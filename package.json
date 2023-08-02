@@ -1,0 +1,17 @@
+{
+  "name": "smart-orange-test",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://E-gap.github.io/smart-orange-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /smart-orange-test/"
+  },
+  "author": "YOUR_NAME <dfd@dffdf.df>",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.64.2"
+  }
+}
