@@ -5,7 +5,7 @@
 
 .about__container {
   background-color: #fbfbfb;
-  padding-bottom: 20px;
+
   display: flex;
   justify-content: center;
 }
@@ -22,7 +22,7 @@
 
 .example__photo1 {
   width: 270px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .example__photo2 {
   width: 270px;
@@ -31,17 +31,19 @@
 .example__photo3 {
   width: 270px;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .about__photos--relative {
-  margin-right: 20px;
+  margin-right: 30px;
   position: relative;
-  top: 40px;
+  top: 30px;
 }
 
 .about__info {
   width: 400px;
+  margin-bottom: 30px;
 }
 
 .nameSection {
@@ -49,7 +51,7 @@
   line-height: 1;
   color: #bdbdbd;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   &::first-letter {
     text-transform: uppercase;
@@ -57,17 +59,18 @@
 }
 
 .descriptionCompany {
+  font-family: TT Hoves;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .about__read {
   display: flex;
   align-items: center;
-  padding: 24px 50px;
+  padding: 24px 93px;
   font-size: 12px;
   text-transform: uppercase;
   background-color: #ffffff;
