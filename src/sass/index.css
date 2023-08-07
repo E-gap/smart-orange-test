@@ -1,0 +1,164 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 480px;
+  border: 1px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: unset;
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: unset;
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header .blockright {
+  width: 770px;
+  border: 1px solid pink;
+}
+
+.header__menu li:not(:last-child) {
+  margin-right: 80px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav ul {
+  display: flex;
+  border: 1px solid green;
+}
+.header__nav ul a {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.header__mainlogo {
+  width: 70px;
+}
+
+.home__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  color: #bdbdbd;
+}
+.home__container .blockright {
+  width: 770px;
+  border: 1px solid pink;
+  position: relative;
+}
+.home__container .blockright button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.home__container .blockleft {
+  width: calc(100% - 770px);
+  padding-top: 336px;
+}
+.home__container .blockleft .mainName,
+.home__container .blockleft button,
+.home__container .blockleft .counter {
+  margin-bottom: 80px;
+}
+.home__container .blockleft button {
+  width: 53px;
+  height: 53px;
+  border: none;
+}
+.home__container .blockleft .button__arrow__left {
+  background-image: url(../images/arrow-left.svg);
+  margin-right: 10px;
+}
+.home__container .blockleft .button__arrow__right {
+  background-image: url(../images/arrow-right.svg);
+}
+
+.mainPhoto {
+  width: 100%;
+  display: block;
+}
+
+.mainName {
+  font-size: 64;
+  line-height: 1;
+}
+
+.wordHome {
+  color: #333333;
+}
+
+.counter {
+  display: flex;
+  width: 142px;
+  justify-content: space-between;
+}
+.counter p {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.button__look {
+  display: flex;
+  align-items: center;
+  padding: 24px 50px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
+}
+.button__look::after {
+  content: "";
+  display: block;
+  background-image: url(../images/arrow-right.svg);
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  stroke: #ffffff;
+}/*# sourceMappingURL=index.css.map */

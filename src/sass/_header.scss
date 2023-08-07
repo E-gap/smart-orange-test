@@ -1,0 +1,36 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .blockright {
+    width: 770px;
+    border: 1px solid pink;
+  }
+}
+
+.header__menu li:not(:last-child) {
+  margin-right: 80px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    border: 1px solid green;
+
+    a {
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #333333;
+    }
+  }
+}
+
+.header__mainlogo {
+  width: 70px;
+}

@@ -1,0 +1,88 @@
+.home__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  color: #bdbdbd;
+
+  .blockright {
+    width: 770px;
+    border: 1px solid pink;
+    position: relative;
+
+    button {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .blockleft {
+    width: calc(100% - 770px);
+    padding-top: 336px;
+
+    .mainName,
+    button,
+    .counter {
+      margin-bottom: 80px;
+    }
+    button {
+      width: 53px;
+      height: 53px;
+      border: none;
+    }
+    .button__arrow__left {
+      background-image: url(../images/arrow-left.svg);
+      margin-right: 10px;
+    }
+    .button__arrow__right {
+      background-image: url(../images/arrow-right.svg);
+    }
+  }
+}
+
+.mainPhoto {
+  width: 100%;
+  display: block;
+}
+
+.mainName {
+  font-size: 64;
+  line-height: 1;
+}
+
+.wordHome {
+  color: #333333;
+}
+
+.counter {
+  display: flex;
+  width: 142px;
+  justify-content: space-between;
+
+  p {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+  }
+}
+
+.button__look {
+  display: flex;
+  align-items: center;
+  padding: 24px 50px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url(../images/arrow-right.svg);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+}
