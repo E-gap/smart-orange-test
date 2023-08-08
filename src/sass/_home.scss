@@ -36,7 +36,7 @@
     .button__arrow__left {
       background-image: url(../images/arrow-left.svg);
       margin-right: 10px;
-      background-color: #ffffff;
+      background-color: var(--main-color);
       border: 1px solid #bdbdbd;
 
       &:hover {
@@ -55,13 +55,13 @@
 }
 
 .mainName {
-  font-size: 64;
+  font-size: var(--biggest-size);
   line-height: 1;
   font-weight: 300;
 }
 
 .wordHome {
-  color: #333333;
+  color: var(--second-color);
   font-weight: 700;
 }
 
@@ -71,7 +71,7 @@
   justify-content: space-between;
 
   p {
-    font-size: 24px;
+    font-size: var(--middle-size);
     line-height: 1;
     font-weight: 400;
   }
@@ -81,7 +81,7 @@
   display: flex;
   align-items: center;
   padding: 24px 50px;
-  font-size: 12px;
+  font-size: var(--smallest-size);
   text-transform: uppercase;
   background-color: #ffffff;
   border: none;
@@ -93,8 +93,8 @@
     background-size: contain;
     width: 24px;
     height: 24px;
-    fill: #ffffff;
-    stroke: #ffffff;
+    fill: var(--main-color);
+    stroke: var(--main-color);
     margin-left: 5px;
   }
 }

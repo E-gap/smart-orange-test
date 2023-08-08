@@ -71,10 +71,10 @@
 
 .projectName {
   font-family: TT Hoves;
-  font-size: 64px;
+  font-size: var(--biggest-size);
   font-weight: 700;
   line-height: 1;
-  color: #ffffff;
+  color: var(--main-color);
   text-transform: uppercase;
 }
 
@@ -84,7 +84,7 @@
   font-size: 12px;
   background: transparent;
   border: none;
-  color: #ffffff;
+  color: var(--main-color);
 
   &::after {
     content: '';
@@ -100,12 +100,12 @@
 .project__button__allprojects {
   padding: 24px 39px;
   background-color: #000000;
-  color: #ffffff;
+  color: var(--main-color);
   display: flex;
   align-items: center;
   border: none;
   margin-left: auto;
-  font-size: 12px;
+  font-size: var(--smallest-size);
   line-height: 1;
 
   &::after {

@@ -29,6 +29,16 @@ button:hover, button:focus {
   background-color: green;
 }
 
+:root {
+  --main-color: #ffffff;
+  --second-color: #333333;
+  --biggest-size: 64px;
+  --middle-size: 24px;
+  --small-size: 14px;
+  --smallest-size: 12px;
+  --biggest-weight: ;
+}
+
 .container {
   max-width: 480px;
   margin-left: auto;
@@ -69,7 +79,7 @@ button:hover, button:focus {
   display: flex;
 }
 .header__nav ul a {
-  font-size: 12px;
+  font-size: var(--smallest-size);
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
@@ -125,7 +135,7 @@ button:hover, button:focus {
 .home__container .blockleft .button__arrow__left {
   background-image: url(../images/arrow-left.svg);
   margin-right: 10px;
-  background-color: #ffffff;
+  background-color: var(--main-color);
   border: 1px solid #bdbdbd;
 }
 .home__container .blockleft .button__arrow__left:hover {
@@ -141,13 +151,13 @@ button:hover, button:focus {
 }
 
 .mainName {
-  font-size: 64;
+  font-size: var(--biggest-size);
   line-height: 1;
   font-weight: 300;
 }
 
 .wordHome {
-  color: #333333;
+  color: var(--second-color);
   font-weight: 700;
 }
 
@@ -157,7 +167,7 @@ button:hover, button:focus {
   justify-content: space-between;
 }
 .counter p {
-  font-size: 24px;
+  font-size: var(--middle-size);
   line-height: 1;
   font-weight: 400;
 }
@@ -166,7 +176,7 @@ button:hover, button:focus {
   display: flex;
   align-items: center;
   padding: 24px 50px;
-  font-size: 12px;
+  font-size: var(--smallest-size);
   text-transform: uppercase;
   background-color: #ffffff;
   border: none;
@@ -178,8 +188,8 @@ button:hover, button:focus {
   background-size: contain;
   width: 24px;
   height: 24px;
-  fill: #ffffff;
-  stroke: #ffffff;
+  fill: var(--main-color);
+  stroke: var(--main-color);
   margin-left: 5px;
 }
 
@@ -233,7 +243,7 @@ button:hover, button:focus {
 }
 
 .nameSection {
-  font-size: 64px;
+  font-size: var(--biggest-size);
   line-height: 1;
   color: #bdbdbd;
   font-weight: 300;
@@ -256,9 +266,9 @@ button:hover, button:focus {
   display: flex;
   align-items: center;
   padding: 24px 93px;
-  font-size: 12px;
+  font-size: var(--smallest-size);
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: var(--main-color);
   border: none;
 }
 .about__read::after {
@@ -268,8 +278,8 @@ button:hover, button:focus {
   background-size: contain;
   width: 24px;
   height: 24px;
-  fill: #ffffff;
-  stroke: #ffffff;
+  fill: var(--main-color);
+  stroke: var(--main-color);
   margin-left: 5px;
 }
 
@@ -304,7 +314,7 @@ button:hover, button:focus {
   font-family: TT Hoves;
   font-size: 22px;
   line-height: 1.64;
-  color: #333333;
+  color: var(--second-color);
   font-weight: 400;
 }
 
@@ -383,10 +393,10 @@ button:hover, button:focus {
 
 .projectName {
   font-family: TT Hoves;
-  font-size: 64px;
+  font-size: var(--biggest-size);
   font-weight: 700;
   line-height: 1;
-  color: #ffffff;
+  color: var(--main-color);
   text-transform: uppercase;
 }
 
@@ -396,7 +406,7 @@ button:hover, button:focus {
   font-size: 12px;
   background: transparent;
   border: none;
-  color: #ffffff;
+  color: var(--main-color);
 }
 .project__button__details::after {
   content: "";
@@ -411,12 +421,12 @@ button:hover, button:focus {
 .project__button__allprojects {
   padding: 24px 39px;
   background-color: #000000;
-  color: #ffffff;
+  color: var(--main-color);
   display: flex;
   align-items: center;
   border: none;
   margin-left: auto;
-  font-size: 12px;
+  font-size: var(--smallest-size);
   line-height: 1;
 }
 .project__button__allprojects::after {
@@ -450,7 +460,7 @@ button:hover, button:focus {
   background-color: #f3f3f3;
   color: #8d8d8d;
   font-family: TT Hoves;
-  font-size: 14px;
+  font-size: var(--small-size);
   font-weight: 400;
   line-height: 1.21;
   letter-spacing: 0.04em;
@@ -464,12 +474,12 @@ button:hover, button:focus {
 
 .policy {
   font-family: TT Hoves;
-  font-size: 14px;
+  font-size: var(--small-size);
   font-weight: 400;
   line-height: 1.21;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #333333;
+  color: var(--second-color);
   width: 391px;
   padding-left: 40px;
   margin-bottom: 21px;
@@ -478,12 +488,12 @@ button:hover, button:focus {
 .contact__sendForm {
   padding: 30px 47px;
   background-color: #000000;
-  color: #ffffff;
+  color: var(--main-color);
   display: flex;
   align-items: center;
   border: none;
   margin-right: auto;
-  font-size: 12px;
+  font-size: var(--smallest-size);
   line-height: 1;
 }
 .contact__sendForm::after {
@@ -548,16 +558,16 @@ button:hover, button:focus {
 
 .footer {
   background-color: #2c2c2c;
-  color: #ffffff;
+  color: var(--main-color);
   font-family: TT Hoves;
-  font-size: 14px;
+  font-size: var(--small-size);
   font-weight: 500;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
 }
 .footer a {
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .footer--flex {

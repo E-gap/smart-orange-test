@@ -21,7 +21,7 @@
     display: flex;
 
     a {
-      font-size: 12px;
+      font-size: var(--smallest-size);
       line-height: 1;
       font-weight: 400;
       text-transform: uppercase;
