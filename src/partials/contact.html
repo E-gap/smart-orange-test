@@ -1,26 +1,41 @@
 <section class="contact">
   <div class="container contact__container">
-    <h2>Связаться с нами</h2>
-    <div>
-      <form name="signup_form">
-        <label>
-          <input name="name" />
-        </label>
-        <label>
-          <input name="phone" required />
-        </label>
-        <label>
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          <input name="interest" />
-        </label>
-        <label>
-          <input name="message" required />
-        </label>
-        <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
-        <button type="submit">отправить</button>
-      </form>
-    </div>
+    <h2 class="nameSection">Связаться с нами</h2>
+
+    <form name="signup_form">
+      <div class="contact__formAndPhoto">
+        <div class="contact__form">
+          <label class="contact__form__label">
+            <input name="name" placeholder="Имя" />
+          </label>
+          <label class="contact__form__label">
+            <input name="phone" required placeholder="Номер телефона*" />
+          </label>
+          <label class="contact__form__label">
+            <input type="email" name="email" required placeholder="E-mail*" />
+          </label>
+          <label class="contact__form__label">
+            <input name="interest" placeholder="Интересующий товар/услуга" />
+          </label>
+          <label class="contact__form__label--last">
+            <textarea
+              name="message"
+              required
+              placeholder="Сообщение*"
+              class="textarea contact__form__input--last"
+            ></textarea>
+          </label>
+        </div>
+        <img
+          src="./images/contact-photo.jpg"
+          alt="photo person with telephone"
+          class="contact__photo"
+        />
+      </div>
+      <p class="policy">
+        Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+      </p>
+      <button type="submit" class="contact__sendForm">отправить</button>
+    </form>
   </div>
 </section>
