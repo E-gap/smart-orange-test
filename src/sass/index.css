@@ -24,10 +24,12 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+button:hover, button:focus {
+  background-color: green;
+}
 
 .container {
   max-width: 480px;
-  border: 1px solid red;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,7 +52,6 @@ button {
 }
 .header .blockright {
   width: 770px;
-  border: 1px solid pink;
 }
 
 .header__menu li:not(:last-child) {
@@ -64,7 +65,6 @@ button {
 }
 .header__nav ul {
   display: flex;
-  border: 1px solid green;
 }
 .header__nav ul a {
   font-size: 12px;
@@ -72,6 +72,15 @@ button {
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
+}
+
+.header__menu__link {
+  padding-bottom: 3px;
+}
+
+.link--current {
+  border-top: 1px solid rgb(51, 51, 51);
+  border-bottom: 1px solid rgb(51, 51, 51);
 }
 
 .header__mainlogo {
@@ -89,7 +98,6 @@ button {
 }
 .home__container .blockright {
   width: 770px;
-  border: 1px solid pink;
   position: relative;
 }
 .home__container .blockright button {
@@ -114,6 +122,11 @@ button {
 .home__container .blockleft .button__arrow__left {
   background-image: url(../images/arrow-left.svg);
   margin-right: 10px;
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+}
+.home__container .blockleft .button__arrow__left:hover {
+  background-color: green;
 }
 .home__container .blockleft .button__arrow__right {
   background-image: url(../images/arrow-right.svg);
@@ -303,6 +316,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .projectItem {
@@ -419,6 +433,11 @@ button {
   display: flex;
   flex-direction: column;
 }
+.contact__form span {
+  color: red;
+  position: absolute;
+  top: 12px;
+}
 .contact__form input,
 .contact__form textarea {
   padding: 15px 21px;
@@ -490,6 +509,36 @@ button {
 .contact__form__input--last {
   height: 147px;
   resize: none;
+}
+
+.contact__form__label__phone,
+.contact__form__label__email,
+.contact__form__label__message {
+  position: relative;
+}
+
+.phone__redstar {
+  left: 128px;
+}
+
+.email__redstar {
+  left: 63px;
+}
+
+.message__redstar {
+  left: 96px;
+}
+
+.input__phone:valid + .phone__redstar {
+  display: none;
+}
+
+.textarea:valid + .message__redstar {
+  display: none;
+}
+
+.input__email:valid + .email__redstar {
+  display: none;
 }
 
 .footer {
@@ -565,6 +614,9 @@ button {
   height: 16px;
   margin-right: 10px;
 }
+.footer__contact__address:hover {
+  cursor: pointer;
+}
 
 .footer__contact__phone {
   display: flex;
@@ -578,6 +630,9 @@ button {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+}
+.footer__contact__phone:hover {
+  cursor: pointer;
 }
 
 .footer__contact__email {
@@ -594,6 +649,9 @@ button {
   height: 11px;
   margin-right: 10px;
 }
+.footer__contact__email:hover {
+  cursor: pointer;
+}
 
 .footer__rights {
   text-align: center;
@@ -601,6 +659,7 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100vw;
 }
 
 .footer__social__list {

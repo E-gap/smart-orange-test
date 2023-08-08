@@ -5,12 +5,10 @@
 .home__container {
   display: flex;
   justify-content: space-between;
-
   color: #bdbdbd;
 
   .blockright {
     width: 770px;
-    border: 1px solid pink;
     position: relative;
 
     button {
@@ -37,6 +35,12 @@
     .button__arrow__left {
       background-image: url(../images/arrow-left.svg);
       margin-right: 10px;
+      background-color: #ffffff;
+      border: 1px solid #bdbdbd;
+
+      &:hover {
+        background-color: green;
+      }
     }
     .button__arrow__right {
       background-image: url(../images/arrow-right.svg);

@@ -7,6 +7,12 @@
   display: flex;
   flex-direction: column;
 
+  span {
+    color: red;
+    position: absolute;
+    top: 12px;
+  }
+
   input,
   textarea {
     padding: 15px 21px;
@@ -70,7 +76,6 @@
 
 .contact__photo {
   width: 749px;
-
   display: block;
 }
 
@@ -81,4 +86,34 @@
 .contact__form__input--last {
   height: 147px;
   resize: none;
+}
+
+.contact__form__label__phone,
+.contact__form__label__email,
+.contact__form__label__message {
+  position: relative;
+}
+
+.phone__redstar {
+  left: 128px;
+}
+
+.email__redstar {
+  left: 63px;
+}
+
+.message__redstar {
+  left: 96px;
+}
+
+.input__phone:valid + .phone__redstar {
+  display: none;
+}
+
+.textarea:valid + .message__redstar {
+  display: none;
+}
+
+.input__email:valid + .email__redstar {
+  display: none;
 }

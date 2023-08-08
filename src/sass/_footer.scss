@@ -75,6 +75,10 @@
     height: 16px;
     margin-right: 10px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .footer__contact__phone {
@@ -89,6 +93,10 @@
     width: 16px;
     height: 16px;
     margin-right: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -106,6 +114,10 @@
     height: 11px;
     margin-right: 10px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .footer__rights {
@@ -114,6 +126,7 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100vw;
 }
 
 .footer__social__list {

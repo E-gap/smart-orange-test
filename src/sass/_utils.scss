@@ -21,4 +21,9 @@ button {
   cursor: pointer;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: green;
+  }
 }

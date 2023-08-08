@@ -8,22 +8,38 @@
           <label class="contact__form__label">
             <input name="name" placeholder="Имя" />
           </label>
-          <label class="contact__form__label">
-            <input name="phone" required placeholder="Номер телефона*" />
+          <label class="contact__form__label contact__form__label__phone">
+            <input
+              class="input__phone"
+              type="tel"
+              name="phone"
+              required
+              placeholder="Номер телефона"
+            />
+            <span class="phone__redstar">*</span>
           </label>
-          <label class="contact__form__label">
-            <input type="email" name="email" required placeholder="E-mail*" />
+          <label class="contact__form__label contact__form__label__email">
+            <input
+              name="email"
+              required
+              placeholder="E-mail"
+              class="input__email"
+            />
+            <span class="email__redstar">*</span>
           </label>
           <label class="contact__form__label">
             <input name="interest" placeholder="Интересующий товар/услуга" />
           </label>
-          <label class="contact__form__label--last">
+          <label
+            class="contact__form__label--last contact__form__label__message"
+          >
             <textarea
               name="message"
               required
-              placeholder="Сообщение*"
+              placeholder="Сообщение"
               class="textarea contact__form__input--last"
             ></textarea>
+            <span class="message__redstar">*</span>
           </label>
         </div>
         <img
