@@ -23,6 +23,7 @@ button {
   cursor: pointer;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  font-family: TT Hoves;
 }
 button:hover, button:focus {
   background-color: green;
@@ -49,6 +50,7 @@ button:hover, button:focus {
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: TT Hoves;
 }
 .header .blockright {
   width: 770px;
@@ -89,6 +91,7 @@ button:hover, button:focus {
 
 .home {
   padding-bottom: 60px;
+  font-family: TT Hoves;
 }
 
 .home__container {
@@ -140,10 +143,12 @@ button:hover, button:focus {
 .mainName {
   font-size: 64;
   line-height: 1;
+  font-weight: 300;
 }
 
 .wordHome {
   color: #333333;
+  font-weight: 700;
 }
 
 .counter {
