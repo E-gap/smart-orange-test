@@ -1,0 +1,157 @@
+.footer {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.footer--flex {
+  display: flex;
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+.footer__mainlogo {
+  width: 145px;
+  margin-right: 99px;
+}
+
+.footer__headline {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+}
+
+.footer__info {
+  margin-right: 157px;
+}
+
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.footer__navigation__item {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact__list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer__contact__address {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: flex-start;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(../images/address-icon.svg);
+    background-size: contain;
+    width: 11px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
+.footer__contact__phone {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(../images/phone-icon.svg);
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
+.footer__contact__email {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(../images/letter-icon.svg);
+    background-size: contain;
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+  }
+}
+
+.footer__rights {
+  text-align: center;
+  color: rgba(200, 200, 200, 0.5);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer__social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 193px;
+}
+
+.footer__social__facebook::before {
+  content: '';
+  display: block;
+  background-image: url(../images/facebook-icon.svg);
+  background-size: contain;
+  width: 10px;
+  height: 19px;
+}
+
+.footer__social__twitter::before {
+  content: '';
+  display: block;
+  background-image: url(../images/twitter-icon.svg);
+  background-size: contain;
+  width: 22px;
+  height: 17px;
+}
+.footer__social__linkedin::before {
+  content: '';
+  display: block;
+  background-image: url(../images/linkedin-icon.svg);
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+.footer__social__share::before {
+  content: '';
+  display: block;
+  background-image: url(../images/shape-icon.svg);
+  background-size: contain;
+  width: 14px;
+  height: 19px;
+}
